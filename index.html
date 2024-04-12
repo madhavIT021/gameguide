@@ -104,7 +104,7 @@
     <h3>About</h3>
     <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quas, sunt consectetur autem nihil quidem dolorum delectus quibr <br> officia voluptates quod pariatur sequi reprehenderit numquam voluptatibus fugit cumque, facilis voluptas ab, ex nostrum tem<br>ora?Impedit dolor facere harum vel, doloribus explicabo, eveniet reprehenderit id doloremque omnis at placeat aperiam! Eos.</span>
   </div> -->
-  
+
   <!-- GUIDE LIST -->
   <div class="container" style="margin-top: 160px;">
     <ul class="collapsible z-depth-0 guides" style="border: none;">
@@ -127,6 +127,30 @@
     </ul>
   </div>
 
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyA1zQEXBuOwQtV4GyR0jvTPxBU-kB8k7G8",
+      authDomain: "gameuide.firebaseapp.com",
+      projectId: "gameuide",
+      storageBucket: "gameuide.appspot.com",
+      messagingSenderId: "556077306257",
+      appId: "1:556077306257:web:43a02271125dc4eacb8a30",
+      measurementId: "G-JDZXFSJXMH"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="scripts/auth.js"></script>
